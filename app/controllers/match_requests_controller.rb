@@ -1,4 +1,4 @@
-class MatchRequestsController < ActionController::Base
+class MatchRequestsController < ApplicationController
   respond_to :json
 
   def create

@@ -1,4 +1,4 @@
-class MatchesController < ActionController::Base
+class MatchesController < ApplicationController
   respond_to :json
 
   def show
