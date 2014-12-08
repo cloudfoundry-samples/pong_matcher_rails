@@ -1,6 +1,5 @@
 ---
 applications:
 - name: railspong
-  command: bin/rake cf:on_first_instance db:migrate && bin/rails server -p $PORT
   services:
   - mysql
