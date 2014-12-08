@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  match_uuid: MyString
+  match_request_uuid: MyString
+  player_uuid: MyString
+  opponent_uuid: MyString
+
+two:
+  match_uuid: MyString
+  match_request_uuid: MyString
+  player_uuid: MyString
+  opponent_uuid: MyString

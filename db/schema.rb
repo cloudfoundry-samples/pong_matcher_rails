@@ -11,11 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141208112641) do
+ActiveRecord::Schema.define(version: 20141208115621) do
 
   create_table "match_requests", force: true do |t|
     t.string   "uuid"
-    t.string   "player"
+    t.string   "player_uuid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "participants", force: true do |t|
+    t.string   "match_uuid"
+    t.string   "match_request_uuid"
+    t.string   "player_uuid"
+    t.string   "opponent_uuid"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

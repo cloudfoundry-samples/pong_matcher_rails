@@ -3,7 +3,7 @@ class MatchRequestsController < ActionController::Base
 
   def create
     respond_with MatchRequest.create(uuid: params[:id],
-                                     player: params[:player])
+                                     player_uuid: params[:player])
   end
 
   def show
