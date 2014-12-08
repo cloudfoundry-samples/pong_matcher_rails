@@ -7,6 +7,6 @@ class MatchRequestsController < ActionController::Base
   end
 
   def show
-    respond_with MatchRequest.find_by_uuid(params[:id])
+    respond_with MatchRequest.find_by_uuid!(params[:id])
   end
 end
