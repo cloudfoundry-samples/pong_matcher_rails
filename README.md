@@ -97,7 +97,7 @@ curl -v -X DELETE $HOST/all
 ```
 
 Then request a match, providing both a request ID and player ID. Again, you
-should get a 200.
+should get a 204.
 
 ```bash
 curl -v -H "Content-Type: application/json" -X PUT $HOST/match_requests/firstrequest -d '{"player": "andrew"}'
