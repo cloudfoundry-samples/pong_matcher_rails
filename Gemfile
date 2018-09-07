@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.3.0'
+ruby '~> 2.4.0'
 
-gem 'rails', '4.1.8'
+gem 'rails'
+gem 'responders'
 gem 'mysql2'
 gem 'unicorn'
 gem 'spring',         group: :development
